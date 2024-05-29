@@ -85,8 +85,7 @@
       <EnableUAC>false</EnableUAC>
     </Link>
     <PreBuildEvent>
-      <Command>del  "D:\Programs\3D Rad\3DRad_res\objects\CustomObject\object.dll"
-copy /y "$(TargetPath)" "D:\Programs\3D Rad\3DRad_res\objects\CustomObject\object.dll"</Command>
+      <Command>copy /Y "$(TargetPath)" "D:\Programs\3D Rad\3DRad_res\objects\CustomObject\object.dll"</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
